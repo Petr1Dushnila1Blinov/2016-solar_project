@@ -54,8 +54,6 @@ def parse_star_parameters(line, star):
             star.vy = s[7]
 
 
-    pass
-
 def parse_planet_parameters(line, planet):
     """Считывает данные о планете из строки.
     Предполагается такая строка:
@@ -82,8 +80,6 @@ def parse_planet_parameters(line, planet):
             planet.vx = s[6]
             planet.vy = s[7]
 
-
-    pass
 
 
 def write_space_objects_data_to_file(output_filename, space_objects):
