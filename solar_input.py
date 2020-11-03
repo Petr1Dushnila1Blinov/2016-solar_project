@@ -49,13 +49,13 @@ def parse_star_parameters(line, star):
     s = line.split()
     for i in range(len(s)):
         if s[0] == 'Star':
-            star.R = int(s[1])
+            star.R = float(s[1])
             star.color = s[2]
-            star.m = int(s[3])
-            star.x = int(s[4])
-            star.y = int(s[5])
-            star.vx = int(s[6])
-            star.vy = int(s[7])
+            star.m = float(s[3])
+            star.x = float(s[4])
+            star.y = float(s[5])
+            star.vx = float(s[6])
+            star.vy = float(s[7])
 
 
 def parse_planet_parameters(line, planet):
@@ -76,13 +76,13 @@ def parse_planet_parameters(line, planet):
     s = line.split()
     for i in range(len(s)):
         if s[0] == 'Planet':
-            planet.R = int(s[1])
+            planet.R = float(s[1])
             planet.color = s[2]
-            planet.m = int(s[3])
-            planet.x = int(s[4])
-            planet.y = int(s[5])
-            planet.vx = int(s[6])
-            planet.vy = int(s[7])
+            planet.m = float(s[3])
+            planet.x = float(s[4])
+            planet.y = float(s[5])
+            planet.vx = float(s[6])
+            planet.vy = float(s[7])
 
 
 
@@ -100,9 +100,8 @@ def write_space_objects_data_to_file(output_filename, space_objects):
     with open(output_filename, 'w') as out_file:
         for obj in space_objects:
             print(out_file, "%s %d %s %f" % ('1', 2, '3', 4.5))
-            # FIXME: should store real values
 
-# FIXME: хорошо бы ещё сделать функцию, сохранающую статистику в заданный файл...
+
 
 if __name__ == "__main__":
     print("This module is not for direct call!")
