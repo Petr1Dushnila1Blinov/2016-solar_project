@@ -45,13 +45,13 @@ def parse_star_parameters(line, star):
     s = line.split()
     for i in range(len(s)):
         if s[0] == 'Star':
-            star.R = s[1]
+            star.R = int(s[1])
             star.color = s[2]
-            star.m = s[3]
-            star.x = s[4]
-            star.y = s[5]
-            star.vx = s[6]
-            star.vy = s[7]
+            star.m = int(s[3])
+            star.x = int(s[4])
+            star.y = int(s[5])
+            star.vx = int(s[6])
+            star.vy = int(s[7])
 
 
 def parse_planet_parameters(line, planet):
@@ -72,13 +72,13 @@ def parse_planet_parameters(line, planet):
     s = line.split()
     for i in range(len(s)):
         if s[0] == 'Planet':
-            planet.R = s[1]
+            planet.R = int(s[1])
             planet.color = s[2]
-            planet.m = s[3]
-            planet.x = s[4]
-            planet.y = s[5]
-            planet.vx = s[6]
-            planet.vy = s[7]
+            planet.m = int(s[3])
+            planet.x = int(s[4])
+            planet.y = int(s[5])
+            planet.vx = int(s[6])
+            planet.vy = int(s[7])
 
 
 
