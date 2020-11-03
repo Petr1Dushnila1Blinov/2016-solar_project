@@ -14,7 +14,7 @@ Planet 5 green 5.974E24 149.60E9 0 0 29.76E3
 Planet 3 red 6.419E23 227.94E9 0 0 24.13E3
 
 # Юпитер
-Planet 20 yellow 1.899E27 778.41E9 0 0 13.07E3
+Planet 20 yellow 1.899E27 778.41E9 0 03 13.07E3
 
 # Сатурн
 Planet 15 white 5.685E26 1429.4E9 0 0 9.67E3
