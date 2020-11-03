@@ -36,15 +36,25 @@ def parse_star_parameters(line, star):
 
     Здесь (x, y) — координаты зведы, (Vx, Vy) — скорость.
     Пример строки:
-    Star 10 red 1000 1 2 3 4
-
+    Star 10 red 1000 1 2 3
     Параметры:
 
     **line** — строка с описание звезды.
     **star** — объект звезды.
     """
+    s = line.split()
+    for i in range(len(s)):
+        if s[0] == 'Star':
+            star.R = s[1]
+            star.color = s[2]
+            star.m = s[3]
+            star.x = s[4]
+            star.y = s[5]
+            star.vx = s[6]
+            star.vy = s[7]
 
-    pass  # FIXME: not done yet
+
+    pass
 
 def parse_planet_parameters(line, planet):
     """Считывает данные о планете из строки.
@@ -61,7 +71,19 @@ def parse_planet_parameters(line, planet):
     **line** — строка с описание планеты.
     **planet** — объект планеты.
     """
-    pass  # FIXME: not done yet...
+    s = line.split()
+    for i in range(len(s)):
+        if s[0] == 'Planet':
+            planet.R = s[1]
+            planet.color = s[2]
+            planet.m = s[3]
+            planet.x = s[4]
+            planet.y = s[5]
+            planet.vx = s[6]
+            planet.vy = s[7]
+
+
+    pass
 
 
 def write_space_objects_data_to_file(output_filename, space_objects):
