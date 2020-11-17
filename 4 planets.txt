@@ -2,7 +2,7 @@
 Planet 5 red 5.974E23 149.60E8 0 0 29.76E2
 
 # Сталин
-Planet 4 orange 5.974E23 149.60E8 149.60E8 -29.76E2 0
+Planet 4 orange 5.974E23 149.60E8 149.60E8 0 -29.76E2
 
 # Троцкий
 Planet 3 purple 5.974E23 0 149.60E8 0 -29.76E2
